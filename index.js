@@ -1,11 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import Logo from '../../img/Logo.svg'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import './styles.css'
 
+const Home = () => {
+    return (
+        <main className="container-home">
+            <img src={Logo} alt="Logo.svg" />
+
+            <div>
+                <h1>SPA</h1>
+                <p>SPA significa Aplicação de Página Única, e trata-se de um método - relativamente novo - para o desenvolvimento web baseado em técnicas de front-end, usando sobretudo de #JavaScript e seus frameworks.</p>
+                <button>Matricule-se</button>
+            </div>
+        </main>
+    )
+}
+
+export default Home;
